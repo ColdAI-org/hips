@@ -1,0 +1,90 @@
+{
+  "repo": "hiero-ledger/hiero-improvement-proposals",
+  "authors": ["shayansal"],
+  "themes": [
+    { "id": "scaling", "title": "Scaling and off-ledger execution" },
+    { "id": "security", "title": "Account security and post-quantum signatures" },
+    { "id": "contracts", "title": "Smart contracts and developer experience" },
+    { "id": "interop", "title": "Cross-ledger interoperability (CLPR)" }
+  ],
+  "proposals": {
+    "1563": {
+      "slug": "lightsphere",
+      "short": "Lightsphere",
+      "theme": "scaling",
+      "summary": "A standard for off-ledger execution that settles to Hiero. In signed mode, 2–16 parties co-sign states and settle once. In network mode, a whole Hiero network (for example a HashSphere) connects over CLPR and has a guaranteed exit. Includes a throughput accounting rule so claims can be compared.",
+      "implementation": [
+        { "label": "ColdAI-org/lightsphere", "url": "https://github.com/ColdAI-org/lightsphere", "note": "Reference implementation: contracts, Go benchmark harness, TypeScript client and watchtower. 46 tests; 46,688 effective tx/s measured on one machine" }
+      ],
+      "highlights": [
+        "Building the reference implementation found two double-payout bugs in the first draft, both fixed in the spec",
+        "An independent review moved signed mode from HIP-632 account-key checks to signing keys bound into each sphere"
+      ]
+    },
+    "1560": {
+      "slug": "contract-trace-data-limit",
+      "short": "Contract trace data limit",
+      "theme": "contracts",
+      "summary": "Makes the consensus node's 262,144-byte contract trace-size cap visible as itself, with its own response code instead of INSUFFICIENT_GAS. Mirror-node simulation and the JSON-RPC relay then report the same failure before a transaction is sent.",
+      "implementation": [
+        { "label": "Evidence on Hedera testnet", "url": "https://github.com/ColdAI-org/clprouter/blob/main/docs/lfdt/hedera-trace-cap.md", "note": "Write-up of the failed transactions that exposed the cap" },
+        { "label": "LFDT-CLPR/clpr-smart-contracts#37", "url": "https://github.com/LFDT-CLPR/clpr-smart-contracts/pull/37", "note": "Documents the cap for large-calldata verifiers" },
+        { "label": "LFDT-CLPR/clpr-smart-contracts#38", "url": "https://github.com/LFDT-CLPR/clpr-smart-contracts/pull/38", "note": "Staged verifier input that stays under the cap" }
+      ],
+      "highlights": [
+        "Found while opening a Sepolia ↔ Hedera CLPR Channel: the same call failed at every gas limit from 5.6M to 15M"
+      ]
+    },
+    "1550": {
+      "slug": "hcpq-ml-dsa-44-signatures",
+      "short": "HCPQ: ML-DSA-44 signatures",
+      "theme": "security",
+      "summary": "An opt-in post-quantum transaction signature profile using standard FIPS 204 ML-DSA-44. Signatures are bound to the ledger ID and to the exact canonical transaction bytes. Existing Ed25519 and ECDSA keys are unchanged, and the profile is disabled by default.",
+      "implementation": [
+        { "label": "hiero-ledger/hiero-cryptography#693", "url": "https://github.com/hiero-ledger/hiero-cryptography/pull/693", "note": "ML-DSA-44 profile, key IDs, transcript signing, and conformance vectors re-checked with OpenSSL" },
+        { "label": "hiero-ledger/hiero-consensus-node#27253", "url": "https://github.com/hiero-ledger/hiero-consensus-node/pull/27253", "note": "Consensus-node integration, canonical transaction checks, and integration tests" }
+      ],
+      "highlights": [
+        "Reviewed by a Hiero maintainer; every point addressed, including cross-language vectors and an algorithm-ID registry"
+      ]
+    },
+    "1546": {
+      "slug": "clpr-intent-settlement-liquidity-clearing",
+      "short": "CLPR intent settlement",
+      "theme": "interop",
+      "summary": "Intent-based cross-ledger settlement on CLPR. Users sign the outcome they want, competing solvers fill it, and a CLPR-proven receipt releases escrow exactly once. Solvers can then net their inventory in a collateralized clearing layer.",
+      "implementation": [],
+      "highlights": []
+    },
+    "1545": {
+      "slug": "clpr-canonical-asset-transfer",
+      "short": "CLPR canonical asset transfer",
+      "theme": "interop",
+      "summary": "One asset identity, transfer envelope and adapter interface for moving fungible assets over CLPR. It covers issuer burn/mint, lock/mint and lock/release modes, with auditable supply accounting so assets don't fragment into incompatible wrapped copies.",
+      "implementation": [],
+      "highlights": []
+    },
+    "1544": {
+      "slug": "clpr-financial-security-profiles",
+      "short": "CLPR financial security profiles",
+      "theme": "interop",
+      "summary": "Machine-readable security profiles and value guards for financial apps on CLPR. A profile pins the exact ledgers, verifiers and finality rules an app relies on. A value guard enforces per-message, in-flight and time-window limits.",
+      "implementation": [],
+      "highlights": []
+    },
+    "1539": {
+      "slug": "hbar-vaulted-balances",
+      "short": "HBAR vaulted balances",
+      "theme": "security",
+      "summary": "An account-native HBAR vault. Vaulted HBAR keeps staking but can only move through a delayed, destination-bound release. During the delay, a separate guardian key can cancel the release or recover the funds to a pre-committed account, which limits the damage from a stolen signing key.",
+      "implementation": [],
+      "highlights": []
+    }
+  },
+  "contributions": {
+    "1543": {
+      "theme": "interop",
+      "summary": "Proposed amendments to HIP-1535 (CLPR) on Channel identity and emergency recovery."
+    }
+  }
+}
