@@ -148,15 +148,14 @@ function renderTable(records) {
     .filter((r) => r.kind === "proposal")
     .map((r) => {
       const c = curated.proposals[r.pr] ?? {};
-      const theme = curated.themes.find((t) => t.id === c.theme)?.title ?? "";
       const impl = (c.implementation ?? []).length
         ? c.implementation.map((i) => `[${i.label}](${i.url})`).join("<br>")
         : "Specification";
-      return `| [${esc(hipLabel(r))}](${r.prUrl}) | [**${esc(r.title)}**](${r.snapshot}) | ${esc(r.category)} | ${esc(theme)} | ${esc(r.status)} · ${esc(r.prState)} | ${r.created} | ${impl} |`;
+      return `| [${esc(hipLabel(r))}](${r.prUrl}) | [**${esc(c.short ?? r.title)}**](${r.snapshot})<br><sub>${esc(r.title)}</sub> | ${esc(r.category)} | ${esc(r.status)} · ${esc(r.prState)} | ${r.created} | ${impl} |`;
     });
   return [
-    "| PR | Proposal | Category | Theme | Status | Submitted | Implementation |",
-    "|---|---|---|---|---|---|---|",
+    "| PR | Proposal | Category | Status | Submitted | Implementation |",
+    "|---|---|---|---|---|---|",
     ...rows,
   ].join("\n");
 }
