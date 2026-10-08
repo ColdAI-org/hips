@@ -57,13 +57,13 @@ status, the implementation work behind it, and a snapshot of the full text.
 <!-- table:start -->
 | PR | Proposal | Category | Status | Submitted | Implementation |
 |---|---|---|---|---|---|
-| [#1563](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1563) | [**Lightsphere**](proposals/1563-lightsphere.md)<br><sub>Lightsphere - Off-Ledger Execution Spheres Anchored to Hiero</sub> | Application | Draft · open | 2026-10-07 | [ColdAI-org/lightsphere](https://github.com/ColdAI-org/lightsphere) |
-| [#1560](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1560) | [**Contract trace data limit**](proposals/1560-contract-trace-data-limit.md)<br><sub>Explicit Status and Pre-flight Parity for the Contract Trace Data Size Limit</sub> | Service | Draft · draft PR | 2026-10-05 | [Evidence on Hedera testnet](https://github.com/ColdAI-org/clprouter/blob/main/docs/lfdt/hedera-trace-cap.md)<br>[LFDT-CLPR/clpr-smart-contracts#37](https://github.com/LFDT-CLPR/clpr-smart-contracts/pull/37)<br>[LFDT-CLPR/clpr-smart-contracts#38](https://github.com/LFDT-CLPR/clpr-smart-contracts/pull/38) |
-| [#1550](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1550) | [**HCPQ: ML-DSA-44 signatures**](proposals/1550-hcpq-ml-dsa-44-signatures.md)<br><sub>Ledger-Bound ML-DSA-44 Transaction Signatures</sub> | Core | Draft · open | 2026-09-09 | [hiero-ledger/hiero-cryptography#693](https://github.com/hiero-ledger/hiero-cryptography/pull/693)<br>[hiero-ledger/hiero-consensus-node#27253](https://github.com/hiero-ledger/hiero-consensus-node/pull/27253) |
-| [#1546](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1546) | [**CLPR intent settlement**](proposals/1546-clpr-intent-settlement-liquidity-clearing.md)<br><sub>CLPR Intent Settlement and Liquidity Clearing Standard</sub> | Application | Draft · open | 2026-09-02 | Specification |
-| [#1545](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1545) | [**CLPR canonical asset transfer**](proposals/1545-clpr-canonical-asset-transfer.md)<br><sub>CLPR Canonical Asset Transfer Standard</sub> | Application | Draft · open | 2026-09-02 | Specification |
-| [#1544](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1544) | [**CLPR financial security profiles**](proposals/1544-clpr-financial-security-profiles.md)<br><sub>CLPR Financial Security Profiles and Value Guards</sub> | Application | Draft · open | 2026-09-02 | Specification |
-| [#1539](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1539) | [**HBAR vaulted balances**](proposals/1539-hbar-vaulted-balances.md)<br><sub>HBAR Vaulted Balances with Delayed Release and Recovery</sub> | Service | Draft · open | 2026-08-31 | Specification |
+| [#1563](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1563) | [**Lightsphere**](proposals/1563-lightsphere.md)<br><sub>Lightsphere - Off-Ledger Execution Spheres Anchored to Hiero</sub> | Application | Draft · closed | 2026-10-07 | [ColdAI-org/lightsphere](https://github.com/ColdAI-org/lightsphere) |
+| [#1560](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1560) | [**Contract trace data limit**](proposals/1560-contract-trace-data-limit.md)<br><sub>Explicit Status and Pre-flight Parity for the Contract Trace Data Size Limit</sub> | Service | Draft · closed | 2026-10-05 | [Evidence on Hedera testnet](https://github.com/ColdAI-org/clprouter/blob/main/docs/lfdt/hedera-trace-cap.md)<br>[LFDT-CLPR/clpr-smart-contracts#37](https://github.com/LFDT-CLPR/clpr-smart-contracts/pull/37)<br>[LFDT-CLPR/clpr-smart-contracts#38](https://github.com/LFDT-CLPR/clpr-smart-contracts/pull/38) |
+| [#1550](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1550) | [**HCPQ: ML-DSA-44 signatures**](proposals/1550-hcpq-ml-dsa-44-signatures.md)<br><sub>Ledger-Bound ML-DSA-44 Transaction Signatures</sub> | Core | Draft · closed | 2026-09-09 | [hiero-ledger/hiero-cryptography#693](https://github.com/hiero-ledger/hiero-cryptography/pull/693)<br>[hiero-ledger/hiero-consensus-node#27253](https://github.com/hiero-ledger/hiero-consensus-node/pull/27253) |
+| [#1546](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1546) | [**CLPR intent settlement**](proposals/1546-clpr-intent-settlement-liquidity-clearing.md)<br><sub>CLPR Intent Settlement and Liquidity Clearing Standard</sub> | Application | Draft · closed | 2026-09-02 | Specification |
+| [#1545](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1545) | [**CLPR canonical asset transfer**](proposals/1545-clpr-canonical-asset-transfer.md)<br><sub>CLPR Canonical Asset Transfer Standard</sub> | Application | Draft · closed | 2026-09-02 | Specification |
+| [#1544](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1544) | [**CLPR financial security profiles**](proposals/1544-clpr-financial-security-profiles.md)<br><sub>CLPR Financial Security Profiles and Value Guards</sub> | Application | Draft · closed | 2026-09-02 | Specification |
+| [#1539](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1539) | [**HBAR vaulted balances**](proposals/1539-hbar-vaulted-balances.md)<br><sub>HBAR Vaulted Balances with Delayed Release and Recovery</sub> | Service | Draft · closed | 2026-08-31 | Specification |
 <!-- table:end -->
 
 ## By theme
@@ -73,7 +73,7 @@ status, the implementation work behind it, and a snapshot of the full text.
 
 #### [Lightsphere - Off-Ledger Execution Spheres Anchored to Hiero](proposals/1563-lightsphere.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1563"><img alt="PR 1563" src="https://img.shields.io/badge/PR-%231563-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20open-2ea44f">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1563"><img alt="PR 1563" src="https://img.shields.io/badge/PR-%231563-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e">
 
 A standard for off-ledger execution that settles to Hiero. In signed mode, 2–16 parties co-sign states and settle once. In network mode, a whole Hiero network (for example a HashSphere) connects over CLPR and has a guaranteed exit. Includes a throughput accounting rule so claims can be compared.
 
@@ -88,7 +88,7 @@ A standard for off-ledger execution that settles to Hiero. In signed mode, 2–1
 
 #### [Ledger-Bound ML-DSA-44 Transaction Signatures](proposals/1550-hcpq-ml-dsa-44-signatures.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1550"><img alt="PR 1550" src="https://img.shields.io/badge/PR-%231550-24292f"></a> <img alt="Core" src="https://img.shields.io/badge/Standards%20Track-Core-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20open-2ea44f">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1550"><img alt="PR 1550" src="https://img.shields.io/badge/PR-%231550-24292f"></a> <img alt="Core" src="https://img.shields.io/badge/Standards%20Track-Core-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e">
 
 An opt-in post-quantum transaction signature profile using standard FIPS 204 ML-DSA-44. Signatures are bound to the ledger ID and to the exact canonical transaction bytes. Existing Ed25519 and ECDSA keys are unchanged, and the profile is disabled by default.
 
@@ -102,7 +102,7 @@ An opt-in post-quantum transaction signature profile using standard FIPS 204 ML-
 
 #### [HBAR Vaulted Balances with Delayed Release and Recovery](proposals/1539-hbar-vaulted-balances.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1539"><img alt="PR 1539" src="https://img.shields.io/badge/PR-%231539-24292f"></a> <img alt="Service" src="https://img.shields.io/badge/Standards%20Track-Service-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20open-2ea44f">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1539"><img alt="PR 1539" src="https://img.shields.io/badge/PR-%231539-24292f"></a> <img alt="Service" src="https://img.shields.io/badge/Standards%20Track-Service-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e">
 
 An account-native HBAR vault. Vaulted HBAR keeps staking but can only move through a delayed, destination-bound release. During the delay, a separate guardian key can cancel the release or recover the funds to a pre-committed account, which limits the damage from a stolen signing key.
 
@@ -114,7 +114,7 @@ An account-native HBAR vault. Vaulted HBAR keeps staking but can only move throu
 
 #### [Explicit Status and Pre-flight Parity for the Contract Trace Data Size Limit](proposals/1560-contract-trace-data-limit.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1560"><img alt="PR 1560" src="https://img.shields.io/badge/PR-%231560-24292f"></a> <img alt="Service" src="https://img.shields.io/badge/Standards%20Track-Service-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20draft%20PR-6e7781">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1560"><img alt="PR 1560" src="https://img.shields.io/badge/PR-%231560-24292f"></a> <img alt="Service" src="https://img.shields.io/badge/Standards%20Track-Service-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e">
 
 Makes the consensus node's 262,144-byte contract trace-size cap visible as itself, with its own response code instead of INSUFFICIENT_GAS. Mirror-node simulation and the JSON-RPC relay then report the same failure before a transaction is sent.
 
@@ -130,7 +130,7 @@ Makes the consensus node's 262,144-byte contract trace-size cap visible as itsel
 
 #### [CLPR Intent Settlement and Liquidity Clearing Standard](proposals/1546-clpr-intent-settlement-liquidity-clearing.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1546"><img alt="PR 1546" src="https://img.shields.io/badge/PR-%231546-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20open-2ea44f"> <img alt="requires HIP-1535" src="https://img.shields.io/badge/requires-HIP--1535-0969da">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1546"><img alt="PR 1546" src="https://img.shields.io/badge/PR-%231546-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e"> <img alt="requires HIP-1535" src="https://img.shields.io/badge/requires-HIP--1535-0969da">
 
 Intent-based cross-ledger settlement on CLPR. Users sign the outcome they want, competing solvers fill it, and a CLPR-proven receipt releases escrow exactly once. Solvers can then net their inventory in a collateralized clearing layer.
 
@@ -139,7 +139,7 @@ Intent-based cross-ledger settlement on CLPR. Users sign the outcome they want, 
 
 #### [CLPR Canonical Asset Transfer Standard](proposals/1545-clpr-canonical-asset-transfer.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1545"><img alt="PR 1545" src="https://img.shields.io/badge/PR-%231545-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20open-2ea44f"> <img alt="requires HIP-1535" src="https://img.shields.io/badge/requires-HIP--1535-0969da">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1545"><img alt="PR 1545" src="https://img.shields.io/badge/PR-%231545-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e"> <img alt="requires HIP-1535" src="https://img.shields.io/badge/requires-HIP--1535-0969da">
 
 One asset identity, transfer envelope and adapter interface for moving fungible assets over CLPR. It covers issuer burn/mint, lock/mint and lock/release modes, with auditable supply accounting so assets don't fragment into incompatible wrapped copies.
 
@@ -148,16 +148,16 @@ One asset identity, transfer envelope and adapter interface for moving fungible 
 
 #### [CLPR Financial Security Profiles and Value Guards](proposals/1544-clpr-financial-security-profiles.md)
 
-<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1544"><img alt="PR 1544" src="https://img.shields.io/badge/PR-%231544-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20open-2ea44f"> <img alt="requires HIP-1535" src="https://img.shields.io/badge/requires-HIP--1535-0969da">
+<a href="https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1544"><img alt="PR 1544" src="https://img.shields.io/badge/PR-%231544-24292f"></a> <img alt="Application" src="https://img.shields.io/badge/Standards%20Track-Application-8259DD"> <img alt="Draft" src="https://img.shields.io/badge/status-Draft%20%C2%B7%20closed-cf222e"> <img alt="requires HIP-1535" src="https://img.shields.io/badge/requires-HIP--1535-0969da">
 
 Machine-readable security profiles and value guards for financial apps on CLPR. A profile pins the exact ledgers, verifiers and finality rules an app relies on. A value guard enforces per-message, in-flight and time-window limits.
 
 - **Submitted** 2026-09-02
 - [Read the full proposal](proposals/1544-clpr-financial-security-profiles.md) · [Pull request](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1544)
 
-#### Contribution: [HIP-1535: harden channel identity and emergency recovery](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1543) (HIP-1535)
+#### Contribution: [HIP-1535: harden channel identity and emergency recovery](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1543) (HIP-1261)
 
-Proposed amendments to HIP-1535 (CLPR) on Channel identity and emergency recovery. [Pull request #1543](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1543), 2026-09-02, +102 / −33 lines.
+Proposed amendments to HIP-1535 (CLPR) on Channel identity and emergency recovery. [Pull request #1543](https://github.com/hiero-ledger/hiero-improvement-proposals/pull/1543), 2026-09-02, +824 / −1 lines.
 
 <!-- themes:end -->
 
