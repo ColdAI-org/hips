@@ -134,7 +134,8 @@ async function sync() {
 
 // ------------------------------------------------------------------ README rendering
 
-const esc = (s) => String(s ?? "").replace(/\|/g, "\\|");
+// Escapes pipes for Markdown table cells, and backslashes so they can't escape the character that follows.
+const esc = (s) => String(s ?? "").replace(/[\\|]/g, "\\$&");
 const badge = (label, message, color) =>
   `https://img.shields.io/badge/${encodeURIComponent(label).replace(/-/g, "--")}-${encodeURIComponent(message).replace(/-/g, "--")}-${color}`;
 const statusColor = { open: "2ea44f", "draft PR": "6e7781", merged: "8250df", closed: "cf222e" };
